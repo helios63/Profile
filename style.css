@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Grotesk:wght@500&display=swap');
+
+@keyframes button {
+  0% {background-color: rgb(29, 112, 221);}
+  25% {background-color: rgb(166, 22, 233);}
+  50% {background-color: rgb(216, 238, 18);}
+  75% {background-color: rgb(224, 93, 31);}
+  100% {background-color: rgb(29, 112, 221);}
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+}
+
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4em;
+  line-height: 0.5;
+  text-align: center;
+  color: #FFF;
+}
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 2em;
+}
+
+#container {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: floralwhite;
+  padding: 0 0 2em 0;
+}
+
+section p {
+  text-align: center;
+}
+
+#intro {
+  background-image: url(imgs/background.gif);
+  background-position: center;
+  background-size: cover;
+  padding: 1em 0;
+}
+
+#me {
+  padding: 1em;
+}
+
+.profile {
+  width: 90%;
+  height: 430px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(imgs/maxime.jpg);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile:hover {
+  background-position: center;
+  background-size: cover;
+  background-image: url(imgs/lexorciste.jpg);
+  border-radius: 50%;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 24px;
+}
+
+#icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  color:#FFF;
+  text-align: center;
+  color: #FFF;
+  font-size: 2em;
+  padding: 1em 0;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+
+  animation-name: button;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 750px) {
+  #container {
+    max-width: 450px;
+  }
+
+  h1{
+    font-size: 2.5em;
+    line-height: 1;
+  }
+
+  .profile {
+  width: 100%;
+  height: 330px;
+  background-position: center;
+  background-size:cover;
+}
+
+  .profile:hover {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 550px) {
+  #container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  #container {
+    max-width: 280px;
+  }
+}
